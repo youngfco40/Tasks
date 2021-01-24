@@ -1,0 +1,38 @@
+
+R version 4.0.3 (2020-10-10) -- "Bunny-Wunnies Freak Out"
+Copyright (C) 2020 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin17.0 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+[R.app GUI 1.73 (7892) x86_64-apple-darwin17.0]
+
+> v
+Error: object 'v' not found
+> install.packages("swirl")
+--- Please select a CRAN mirror for use in this session ---
+trying URL 'https://cran.case.edu/bin/macosx/contrib/4.0/swirl_2.4.5.tgz'
+Content type 'application/x-gzip' length 347939 bytes (339 KB)
+==================================================
+downloaded 339 KB
+
+
+The downloaded binary packages are in
+	/var/folders/4r/4v1j5hx12456b9mqs1p1lmlr0000gn/T//RtmprodXHH/downloaded_packages
+> library(swirl)
+
+| Hi! Type swirl() when you are ready to begin.
+
+> 

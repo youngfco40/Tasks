@@ -28,5 +28,5 @@ head(Data)
 beren2 <- Data
 beren3 <- beren2[order(beren2$age) ,]
 head(beren2)
-head(beren3
+head(beren3)
 write.csv(beren3, 'beren_new.csv' , quote = F, row.names = FALSE)

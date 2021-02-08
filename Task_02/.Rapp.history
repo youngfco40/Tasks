@@ -1,39 +1,147 @@
-setwd('~/Desktop/Evolution/Tasks/Task_02')
-Data <- read.csv('http://jonsmitchell.com/data/beren.csv', stringAsFaxtors = F)
-Data <- read.csv('http://jonsmitchell.com/data/beren.csv', stringAsFactors = F)
-Data <- read.csv('http://jonsmitchell.com/data/beren.csv', stringsAsFactors = F)
-wrtie.csv(Data, 'rawdata.csv', quote = F)
-write.csv(Data, 'rawdata.csv', quote = F)
-length(Data)
-nrow(Data)
-ncol(Data)
-colnames(Data)
-head(Data)
-Data[1,]
-Data[2,]
-Data[1:3,]
-Data[1:3, 4]
-Data[1:5, 1:3]
-Feeds <- which(Data[,9] = 'bottle')
-berenMilk <- Data[Feeds,]
-head(berenMilk)
-Feeds <- which(Data[,9] == 'bottle')
-berenMilk <- Data[Feeds,]
-head(berenMilk)
-Feeds <- which(Data[, 'event'] == 'bottle')
-head(berenMilk)
-berenMilk <- Data[Feeds,]
-head(berenMilk)
+setwd('~/Desktop/Evolution/Tasks/Task_02')#
+Data <- read.csv('http://jonsmitchell.com/data/beren.csv', stringsAsFactors = F)#
+write.csv(Data, 'rawdata.csv', quote = F)#
+length(Data)#
+nrow(Data)#
+ncol(Data)#
+colnames(Data)#
+head(Data)#
+Data[1,]#
+Data[2,]#
+Data[1:3,]#
+Data[1:3, 4]#
+Data[1:5, 1:3]#
+#
+Feeds <- which(Data[,9] == 'bottle')#
+berenMilk <- Data[Feeds,]#
+head(berenMilk)#
+Feeds <- which(Data[, 'event'] == 'bottle')#
+berenMilk <- Data[Feeds,]#
+head(berenMilk)#
+Feeds <- which(Data$event == 'bottle')#
+berenMilk2 <- Data[Feeds,]#
+head(berenMilk2)#
+dayID <- apply(Data, 1, function(x) paste(x[1:3], collapse = '-'))#
+dateID <- sapply(dayID, as.Date, format = "%Y-%m-%d", origin = "2019-04-18")#
+Data$age <- dateID - dateID[which(Data$event == 'birth')]#
+head(Data)#
+beren2 <- Data#
+beren3 <- beren2[order(beren2$age) ,]#
+head(beren2)#
+head(beren3)#
+write.csv(beren3, 'beren_new.csv' , quote = F, row.names = FALSE)
+totalFeed2 <- tapply(beren3$value[Feeds], beren3$age[Feeds], sum)
+Month <-which(beren3$event == "month")
+Months <- month(beren$month)
+totalFeed2 <- tapply(beren3$value[Feeds], sum)
+avgFeed2 <- sum(beren3$value[Feeds])
+varMonth <- tapply(beren3$value[Feeds], beren3$month, var)
+avgFeed2 <- sum(berenMilk$value[Feeds])
+Month <- which(berenMilk$event == "month")
+head(month)
+head(Month)
+getMonth <- Data[Month,]
+head(getMonth)
+Month <- which(Data$event == "month")
+getMonth <- Data[Month,]
+head(getMonth)
+Month <- which(Data$event == 'month')
+getMonth <- Data[Month,]
+head(getMonth)
+Month <- which(Data$month == '4')
+getMonth <- Data[Month,]
+head(getMonth)
+month2 <- which(Data$month == '10')
+berenMonth <- Data
+head(avgFeed2)
+head(getMonth)
+getMonth <- Data[Month,]
+head(getMonth)
+head(avgFeed2)
 Feeds <- which(Data$event == 'bottle')
-berenMilk2 <- Data[Feeds,]
-head(berenMilk2)
-dayID <- apply(Data, 1, function(x) paste(x[1:3], collapse = '-'))
-dateID <-apply(dayID, as.Date, format = "%Y-%m-%d", origin = "2019-04-18")
+berenMilk <- Data[Feeds]
+berenMilk <- Data[Feeds,]
+head(berenMilk)
+avgFeed2 <- sum(berenMilk$value[Feeds])
+Month <- which(Data$month == '10')
+getMonth <- Data[Month,]
+head(getMonth)
+?plot
+?albine
+?par
+unique(beren3$event)
+setwd('~Desktop/Evolution/Tasks/Task_02')
+Data <- read.csv('http://jonsmitchell.com/data/beren.csv', stringsAsFactors = F)
+read.csv('beren_new.csv')
+weight <-which(Data$event == 'trait_mass')
+dayID <- apply(Data,1, function(x) paste (x[1:3], collapse = '='))
+dateID <- sapply(dayID, as.Date, format = "%Y-%m-%d", origin = "2019-04-18")
+Data$age <- dateID - date ID[which(Data$event == 'birth')]
+Data$age <- dateID - dateID[which(Data$event == 'birth')]
+beren2 <-Data
+beren3 <-beren2[order(beren2$age) ,]
+numWeight <- tapply(beren3$value[weight], beren3$age[weight], length)
+totalWeight <-tapply(beren3$value[weight], beren3$age[Feeds], sum)
+totalWeight <-tapply(beren3$value[weight], beren3$age[weight], sum)
+plot(as.numeric(names(totalWeight)), totalWeight, type "b", pch = 16, xlab "age in days", ylab = "weight in kg")
+plot(as.numeric(names(totalWeight)), totalWeight, type = "b", pch = 16, xlab "age in days", ylab = "weight in kg")
+plot(as.numeric(names(totalWeight)), totalWeight, type = "b", pch = 16, xlab = "age in days", ylab = "weight in kg")
+par(las =1, mar= c(5,5,1,1), mpg = c(2,0.5,0), tck = -0.01)
+plot(as.numeric(names(totalWeight)), totalWeight, type = "b", pch = 16, xlab = "age in days", ylab = "weight in kg")
+par(las =1, mar= c(5,5,1,1), mgp = c(2,0.5,0), tck = -0.01)
+plot(as.numeric(names(totalWeight)), totalWeight, type = "b", pch = 16, xlab = "age in days", ylab = "weight in kg")
+plot(as.numeric(names(totalWeight)), totalWeight, type = "l", pch = 16, xlab = "age in days", ylab = "weight in kg")
+head(weight)
+plot(as.numeric(names(totalWeight)), totalWeight, type = "l", pch = 5, xlab = "age in days", ylab = "weight in kg")
+head(beren3)
+head(Data)
+Data <-read.csv('beren_new.csv')
+weight <-which(Data$event == 'trait_mass')
+head(weight)
+dayID <- apply(Data,1, function(x) paste (x[1:3], collapse = '='))
 dateID <- sapply(dayID, as.Date, format = "%Y-%m-%d", origin = "2019-04-18")
 Data$age <- dateID - dateID[which(Data$event == 'birth')]
+beren2 <-Data
+beren3 <-beren2[order(beren2$age) ,]
 head(Data)
-beren2 <- Data
-beren3 <- beren2[order(beren2$age) ,]
-head(beren2)
-head(beren3)
-write.csv(beren3, 'beren_new.csv' , quote = F, row.names = FALSE)
+numWeight <- tapply(beren3$value[weight], beren3$age[weight], length)
+totalWeight <-tapply(beren3$value[weight], beren3$age[weight], sum)
+par(las =1, mar= c(5,5,1,1), mgp = c(2,0.5,0), tck = -0.01)
+plot(as.numeric(names(totalWeight)), totalWeight, type = "l", pch = 5, xlab = "age in days", ylab = "weight in kg")
+Data <- read.csv('beren_new.csv')
+head(Data)
+weight <-which(Data$event == 'trait_mass')
+head(weight)
+dayID <- apply(Data,1, function(x) paste (x[1:3], collapse = '='))
+dateID <- sapply(dayID, as.Date, format = "%Y-%m-%d", origin = "2019-04-18")
+Data$age <- dateID - dateID[which(Data$event == 'birth')]
+beren2 <-Data
+beren3 <-beren2[order(beren2$age) ,]
+head(Data)
+Data <- read.csv('beren_new.csv')
+head(Data)
+weight <-which(Data$event == 'trait_mass')
+dayID <- apply(Data,1, function(x) paste (x[1:3], collapse = '='))
+dateID <- sapply(dayID, as.Date, format = "%Y-%m-%d", origin = "2019-04-18")
+Data$age <- dateID - dateID[which(Data$event == 'birth')]
+head(Data$age)
+Data$age <- dateID - dateID[which(Data$event == 'age')]
+Data$age <- dateID - dateID[which(Data$event == 'trait_mass')]
+head(Data)
+Data <- read.csv('beren_new.csv')
+head(Data)
+Data <- read.csv('beren_new.csv', nrows = 18)
+head(Data)
+weight <-which(Data$event == 'trait_mass')
+head(weight)
+beren2 <-Data
+beren3 <-beren2[order(beren2$age) ,]
+head(Data)
+numWeight <- tapply(beren3$value[weight], beren3$age[weight], length)
+totalWeight <-tapply(beren3$value[weight], beren3$age[weight], sum)
+plot(as.numeric(names(totalWeight)), totalWeight, type = "l", pch = 5, xlab = "age in days", ylab = "weight in kg")
+?plot
+plot(as.numeric(names(totalWeight)), totalWeight, type = "l", main = "weight over time", pch = 5, xlab = "age in days", ylab = "weight in kg")
+pdf("weightovertime.pdf", height = 5, width =5)
+plot(as.numeric(names(totalWeight)), totalWeight, type = "l", main = "weight over time", pch = 5, xlab = "age in days", ylab = "weight in kg")
+dev.off()

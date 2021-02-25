@@ -1,0 +1,200 @@
+library(learnPopGen)
+coalescent.plot()
+?coalescent.plot
+coalescent.plot()
+coalescent.plot(n=20,ngen=30,col.order="alternating")
+object<-coalescent.plot()
+print(object)
+library(coala)
+library(phytools)
+install.packages("learnPopGen")
+install.packages("coala")
+library(coala)
+library(phytools)
+coalescent.plot()
+library(learnPopGen)
+coalescent.plot()
+?coalescent.plot
+coalescent.plot(n=20, ngen=20, colors = 10)
+test <- coalescent.plot(n=20, ngen=20, colors = 10)
+print(test)
+plot(test)
+coalescent.plot(n=20, ngen=10, colors = red)
+coalescent.plot(n=20, ngen=10, colors = 2)
+coalescent.plot(n=20, ngen=10, colors = 6)
+coalescent.plot()
+coalescent.plot(n =10, ngen = 15, col.order="alternating")
+coalescent.plot(n =5, ngen = 5, col.order="alternating")
+coalescent.plot(n =10, ngen = 5, col.order="alternating")
+coalescent.plot(n =10, ngen = 20, col.order="alternating")
+library(learnPopGen)
+library(coala)
+library(phytools)
+install.packages("learnPopGen")
+library(learnPopGen)
+library(coala)
+library(phytools)
+coalescent.plot(n =10, ngen = 5, col.order="alternating")
+coalescent.plot(n =10, ngen = 10, col.order="alternating")
+coalescent.plot()
+model <- coal_model(sample_size = 5, loci_number = 10, loci_length = 500, ploidy =2) + feat_mutation(10) + feat_recombination(10) + sumstat_trees() + sumstat_nucleotide_div()
+stats <- simulate(model, nsim = 1)
+Diversity <- stats$pi
+Nloci <- length(stats$trees)
+t1 <- read.tree(text=stats$trees[[1]][1])
+plot(t1)
+axisPhylo()
+Agel <- max(nodeHeights(t1))
+t2 <- read.tree(text=stats$trees[[2]][1])
+plot(t2)
+axisPhylo()
+compare.chronograms(t1, t2)
+plot(t1)
+axisPhylo()
+?coal_model
+compare.chronograms(t1, t2)
+t1_1 <- read.tree(text=stats$trees[[1]][1])
+t1_2 <- read.tree(text=stats$trees[[1]][2])
+par(mfrow=c(1,2))
+plot(t1)
+axisPhylo()
+plot(t2)
+axisPhylo()
+compare.chronograms(t1_1,t1_2)
+par(mfrow=c(1,2))
+plot(t1)
+axisPhylo()
+plot(t2)
+axisPhylo()
+head(Agel)
+Agel <- max(nodeHeights(t2))
+head(Agel)
+for(locus in 1:Nloci) {
+ntrees <- length(stats$trees[[locus]])
+for(n in 1:ntrees) {
+if (locus == 1 && n ==1) {
+outPhy <-read.tree(text=stats$trees[[locus]][n])
+}
+else {
+outPhy <- ape:::c.phylo(outPhy, read.tree(text=stats$trees[[locus]][n]))
+}
+par(mfrow=c(1,1))
+densityTree(outPhy)
+model3 <- coal_model(10,50) + feat_mutation(par_prior("theta", sample.int(100,1))) + sumstat_nucleotide_div()
+stats <- simulate(model3, nsim=40)
+mean_pi <-sapply(stats, function(x) mean(x$pi))
+theta <-sapply(stats, function(x) x$pars[["theta"]])
+par(mfrow=c(1,2))
+plot(mean_pi)
+axisPhylo()
+plot(theta)
+axisPhylo()
+install.packages("learnPopGen")
+install.packages("coala")
+library(learnPopGen)
+library(coala)
+library(phytools)
+for(locus in 1:Nloci) {
+ntrees <- length(stats$trees[[locus]])
+for(n in 1:ntrees) {
+if (locus == 1 && n ==1) {
+outPhy <-read.tree(text=stats$trees[[locus]][n])
+}
+else {
+outPhy <- ape:::c.phylo(outPhy, read.tree(text=stats$trees[[locus]][n]))
+}
+}
+}
+par(mfrow=c(1,1))
+densityTree(outPhy)
+for(locus in 1:Nloci) {
+ntrees <- length(stats$trees[[locus]])
+r(locus in 1:Nloci) {#
+	ntrees <- length(stats$trees[[locus]])#
+	for(n in 1:ntrees) {#
+		if (locus == 1 && n ==1) {#
+			outPhy <-read.tree(text=stats$trees[[locus]][n])#
+		}#
+		else {#
+			outPhy <- ape:::c.phylo(outPhy, read.tree(text=stats$trees[[locus]][n]))#
+		}#
+	}#
+}
+for(locus in 1:Nloci) {#
+	ntrees <- length(stats$trees[[locus]])#
+	for(n in 1:ntrees) {#
+		if (locus == 1 && n ==1) {#
+			outPhy <-read.tree(text=stats$trees[[locus]][n])#
+		}#
+		else {#
+			outPhy <- ape:::c.phylo(outPhy, read.tree(text=stats$trees[[locus]][n]))#
+		}#
+	}#
+}
+Nloci <- length(stats$trees)
+t1 <- read.tree(text=stats$trees[[1]][1])
+t2 <- read.tree(text=stats$trees[[2]][1])
+t1_1 <- read.tree(text=stats$trees[[1]][1])
+stats <- simulate(model, nsim = 1)
+Diversity <- stats$pi
+Nloci <- length(stats$trees)
+t1 <- read.tree(text=stats$trees[[1]][1])
+t2 <- read.tree(text=stats$trees[[2]][1])
+t1_1 <- read.tree(text=stats$trees[[1]][1])
+t1_2 <- read.tree(text=stats$trees[[1]][2])
+stats <- simulate(model, nsim = 1)
+model <- coal_model(sample_size = 5, loci_number = 10, loci_length = 500, ploidy =2) + feat_mutation(10) + feat_recombination(10) + sumstat_trees() + sumstat_nucleotide_div()
+stats <- simulate(model, nsim = 1)
+Diversity <- stats$pi
+Nloci <- length(stats$trees)
+t1 <- read.tree(text=stats$trees[[1]][1])
+t2 <- read.tree(text=stats$trees[[2]][1])
+t1_1 <- read.tree(text=stats$trees[[1]][1])
+t1_2 <- read.tree(text=stats$trees[[1]][2])
+t1_1 <- read.tree(text=stats$trees[[1]][1])
+t1_2 <- read.tree(text=stats$trees[[1]][2])
+for(locus in 1:Nloci) {
+ntrees <- length(stats$trees[[locus]])
+for(n in 1:ntrees) {
+if (locus == 1 && n ==1) {
+outPhy <-read.tree(text=stats$trees[[locus]][n])
+else {
+outPhy <- ape:::c.phylo(outPhy, read.tree(text=stats$trees[[locus]][n]))
+for(locus in 1:Nloci) {#
+	ntrees <- length(stats$trees[[locus]])#
+	for(n in 1:ntrees) {#
+		if (locus == 1 && n ==1) {#
+			outPhy <-read.tree(text=stats$trees[[locus]][n])#
+		}#
+		else {#
+			outPhy <- ape:::c.phylo(outPhy, read.tree(text=stats$trees[[locus]][n]))#
+		}#
+	}#
+}
+par(mfrow=c(1,1))
+densityTree(outPhy)
+model3 <- coal_model(10,50) + feat_mutation(par_prior("theta", sample.int(100,1))) + sumstat_nucleotide_div()
+stats <- simulate(model3, nsim=40)
+mean_pi <-sapply(stats, function(x) mean(x$pi))
+plot(mean_pi)
+par(mfrow=c(1,2))
+plot(mean_pi)
+theta <-sapply(stats, function(x) x$pars[["theta"]])
+axisPhylo()
+plot(theta)
+abline(lm(mean_pi, theta))
+lm(mean_pi, theta))
+lm(mean_pi, theta)
+abline(mean_pi)
+abline(mean_pi)
+mean_pi <-sapply(stats, function(x) mean(x$pi))
+abline(mean_pi)
+plot(theta)
+abline(theta)
+?abline
+abline(reg =, untf = FALSE, \dots)
+lm(mean_pi ~ theta)
+abline(lm(mean_pi ~ theta))
+plot(mean_pi)
+plot(theta)
+abline(lm(mean_pi ~ theta))

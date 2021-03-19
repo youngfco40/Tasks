@@ -1,0 +1,42 @@
+?simsPop
+install.packages(learnPopGen)
+install.packages("learnPopGen")
+library(learnPopGen)
+?simsPop
+?simPop
+?simPop()
+Pop1 <- simPop(Popsize = 50, nGenerations = 100, initial_p =0.5, h = 1, s = 0)
+source("http://jonsmitchell.com/code/fxn05.R")
+Pop1 <- simPop(Popsize = 50, nGenerations = 100, initial_p =0.5, h = 1, s = 0)
+?addFit()
+?addFit
+source("http://jonsmitchell.com/code/reformatData07.R")
+source("http://jonsmitchell.com/code/simFxn.R")
+?addFit
+?addFit
+source("http://jonsmitchell.com/code/simFxn.R")
+?addFit
+?addFit()
+?addFit()
+?addFit
+smoothScatter(dYear,  dAlleles, colramp = Pal, nbin= 100, xlab="year", ylab = "change in allele freq. since 1998")
+dAlleles <- c()
+dYear <- c()
+or (i in 3:ncol(overallFreq)) {#
+	dYear <- c(dYear, overallFreq[,1])#
+	Vec <- overallFreq[,i]#
+	Init <- overallFreq[1,i]#
+	dAlleles <- c(dAlleles, Vec - Init)#
+}
+for (i in 3:ncol(overallFreq)) {#
+	dYear <- c(dYear, overallFreq[,1])#
+	Vec <- overallFreq[,i]#
+	Init <- overallFreq[1,i]#
+	dAlleles <- c(dAlleles, Vec - Init)#
+}
+smoothScatter(dYear, dAlleles, colramp = Pal, nbin = 100)
+smoothScatter(dYear,  dAlleles, colramp = Pal, nbin= 100, xlab="year", ylab = "change in allele freq. since 1998")
+addFit(nruns =50, n=926, ngens =20, startT = 1997, simCol = "gray40", rescale = TRUE)
+addFit(nruns =10, n=926, ngens =20, startT = 1997, simCol = "gray40", rescale = TRUE)
+smoothScatter(dYear,  dAlleles, colramp = Pal, nbin= 100, xlab="year", ylab = "change in allele freq. since 1998")
+addFit(nruns =10, n=926, ngens =20, startT = 1997, simCol = "gray40", rescale = TRUE)

@@ -22,7 +22,7 @@ for (i in 3:ncol(overallFreq)) {
 smoothScatter(dYear, dAlleles, colramp = Pal, nbin = 100)
 
 smoothScatter(dYear,  dAlleles, colramp = Pal, nbin= 100, xlab="year", ylab = "change in allele freq. since 1998")
-addFit(nruns =10, n=926, ngens =20, startT = 1997, simCol = "gray40", rescale = TRUE)
+addFit(nruns= 10, n=500, ngens =20, h=2,s=0,startT = 1997, simCol = "gray40", rescale = TRUE)
 
 plot(alleleFreqs$d_freq, alleleFreqs$d_imm, xlim=c(-0.15, 0.15), xlab="overall freq. change", ylab="freq. change in subset")
 points(alleleFreqs$d_freq, alleleFreqs$d_birth, col= 'blue')

@@ -1,0 +1,460 @@
+?pbtree
+for (i in 1:100) {#
+	births[i,] <- sample(c(replace =FALSE))#
+	Fractions[i,] <- sample(c(replace=FALSE))#
+	trees <- pbtree(b=births, d= births*Fractions, n=100)#
+}
+for (i in 1:100) {#
+	births[[i,]] <- sample(c(replace =FALSE))#
+	Fractions[[i,]] <- sample(c(replace=FALSE))#
+	trees <- pbtree(b=births, d= births*Fractions, n=100)#
+}
+for (i in 1:100) {#
+	births[i,] <- sample(c(replace =FALSE))#
+	Fractions[i,] <- sample(c(replace=FALSE))#
+	trees [[i,]]<- pbtree(b=births, d= births*Fractions, n=100)#
+}
+for (i in 1:100) {#
+	births[i,] <- sample(replace=FALSE)#
+	Fractions[i,] <- sample(replace=FALSE)#
+	trees [[i,]]<- pbtree(b=births, d= births*Fractions, n=100)#
+}
+trees[[i]] <- list()
+births <-c()
+Fractions <-c()
+for (i in 1:100) {#
+	births[i,] <- sample(c(replace =FALSE))#
+	Fractions[i,] <- sample(c(replace=FALSE))#
+	trees [[i,]]<- pbtree(b=births, d= births*Fractions, n=100)#
+}
+trees <- list()
+births <-c()
+Fractions <-c()
+for (i in 1:100) {#
+	births[i,] <- sample(c(replace =FALSE))#
+	Fractions[i,] <- sample(c(replace=FALSE))#
+	trees [[i,]]<- pbtree(b=births, d= births*Fractions, n=100)#
+}
+?sample
+setwd('~/Desktop/Evolution/Tasks/Task_09')
+library(phytools)
+trees <- list()
+births <-c()
+Fractions <-c()
+for (i in 1:100) {#
+	births[i,] <- sample(c(i, replace =FALSE))#
+	Fractions[i,] <- sample(c(i,replace=FALSE))#
+	trees [[i,]]<- pbtree(b=births, d= births*Fractions, n=100)#
+}
+for (i in 1:100) {#
+	births[i,] <- sample(c(i), replace =FALSE)#
+	Fractions[i,] <- sample(c(i),replace=FALSE)#
+	trees [[i,]]<- pbtree(b=births, d= births*Fractions, n=100)#
+}
+births[i,] <- sample(c(i), replace =FALSE)
+for (i in 1:100) {#
+	births[[i,]] <- sample(c(i), replace =FALSE)#
+	Fractions[i,] <- sample(c(i),replace=FALSE)#
+	trees [[i,]]<- pbtree(b=births, d= births*Fractions, n=100)#
+}
+for (i in 1:100) {#
+	births[i,] <- sample(c(i), replace =FALSE)#
+	Fractions[i,] <- sample(c(i),replace=FALSE)#
+	trees [[i,]]<- pbtree(b=births, d= births*Fractions, n=100)#
+}
+for (i in 1:100) {#
+	births[i] <- sample(c(i), replace =FALSE)#
+	Fractions[i] <- sample(c(i),replace=FALSE)#
+	trees [[i]]<- pbtree(b=births, d= births*Fractions, n=100)#
+}
+warings()
+warnings()
+for (i in 1:100) {#
+	births[i] <- sample(c(i), replace =FALSE)#
+	Fractions[i] <- sample(c(i),replace=FALSE)#
+	trees [[i]]<- pbtree(b=births[i], d= births[i]*Fractions[i], n=100)#
+}
+?rnorm
+for (i in 1:100) {#
+	births[i] <- sample(c(i), replace =FALSE)#
+	Fractions[i] <-sample(c(i),replace=FALSE)#
+	trees [[i]]<- pbtree(b=births[i], d= births[i]*Fractions[i], n=100)#
+}
+for (i in 1:100) {#
+	births[i] <- sample(c(), replace =FALSE)#
+	Fractions[i] <-sample(c(),replace=FALSE)#
+	trees [[i]]<- pbtree(b=births[i], d= births[i]*Fractions[i], n=100)#
+}
+for (i in 1:100) {#
+	births[i] <- sample([i], replace =FALSE)#
+	Fractions[i] <-sample([i],replace=FALSE)#
+	trees [[i]]<- pbtree(b=births[i], d= births[i]*Fractions[i], n=100)#
+}
+?sample
+for (i in 1:100) {#
+	x <- i#
+	births[i] <- c(x, replace =FALSE)#
+	Fractions[i] <-c(x,replace=FALSE)#
+	trees [[i]]<- pbtree(b=births[i], d= births[i]*Fractions[i], n=100)#
+}
+?sample
+for (i in 1:100) {#
+	x <- sample(1:100)#
+	births[i,] <- c(x, replace =FALSE)#
+	Fractions[i,] <-c(x,replace=FALSE)#
+	trees [[i,]]<- pbtree(b=births[i], d= births[i]*Fractions[i], n=100)#
+}
+for (i in 1:100) {#
+	x <- sample(1:100)#
+	births[i] <- c(x, replace =FALSE)#
+	Fractions[i] <-c(x,replace=FALSE)#
+	trees [[i]]<- pbtree(b=births[i], d= births[i]*Fractions[i], n=100)#
+}
+for (i in 1:100) {#
+ 	x <- sample(1:100)#
+	births[i] <- x#
+	Fractions[i] <- x#
+	trees [[i]]<- pbtree(b=births[i], d= births[i]*Fractions[i], n=100)#
+}
+for (i in 1:100) {#
+#
+	births[i] <- c()#
+	Fractions[i] <- c()#
+	trees [[i]]<- pbtree(b=births[i], d= births[i]*Fractions[i], n=100)#
+}
+for (i in 1:100) {#
+#
+	births[i]<- i#
+	Fractions[i] <- i#
+	trees [[i]]<- pbtree(b=births[i], d= births[i]*Fractions[i], n=100)#
+}
+births
+for (i in 1:100) {#
+#
+	births[i]<- sample(i, replace=FALSE)#
+	Fractions[i] <- sample(i, replace=FALSE)#
+	trees [[i]]<- pbtree(b=births[i], d= births[i]*Fractions[i], n=100)#
+}
+for (i in 1:100) {#
+#
+	births[i]<- sample(1:100, 1, replace=FALSE)#
+	Fractions[i] <- sample(1:100, 1, replace=FALSE)#
+	trees [[i]]<- pbtree(b=births[i], d= births[i]*Fractions[i], n=100)#
+}
+births
+plot(trees)
+plot(trees[[i]])
+for (i in 1:100) {#
+#
+	births[i]<- sample(1:100, 1, replace=FALSE)#
+	Fractions[i] <- sample(1:100, 1, replace=FALSE)#
+	trees [[i]]<- pbtree(b=births, d= births*Fractions, n=100)#
+}
+trees
+?pbtree
+plot(trees[[i]])
+Fractions
+plot(trees[[i]])
+?plot
+ltt.plot(trees[[i]])
+ltt.plot(trees[[i]], log="y")
+or (i in 1:100) {#
+#
+	births[i]<- sample(1:100, 1, replace=FALSE)#
+	Fractions[i] <- sample(1:100, 1, replace=FALSE)#
+	trees[[i]]<- pbtree(b=births[i], d= (births[i]*Fractions[i]), n=100)#
+	ltt.plot(trees[[i]], log="y")#
+}
+for (i in 1:100) {#
+#
+	births[i]<- sample(1:100, 1, replace=FALSE)#
+	Fractions[i] <- sample(1:100, 1, replace=FALSE)#
+	trees[[i]]<- pbtree(b=births[i], d= (births[i]*Fractions[i]), n=100)#
+}
+ltt.plot(trees[[i]], log="y")
+ltt.plot(trees[[i]], log="y", ylab=log, xlab="net diversification")
+plot(r,trees[[i]])
+bd.ms(trees[[i]])
+bd.ms(phy$trees[[i]])
+rate.estimate(phy$trees[[i]])
+ltt.plot(trees[[i]])
+ltt.plot(trees[[i]], log="x")
+ltt.plot(trees[[i]], log="y")
+?ltt.plot
+plot(trees[[i]], show.tip.label=FALSE)
+ltt.plot(trees[[i]])
+ltt.plot(trees[[i]], log="xy")
+ltt.plot(trees[[i]], log="y")
+plot(trees[[i]], show.tip.label=FALSE)
+ltt.plot(trees[[i]], log="y", backward=TRUE)
+?mtt.plot
+?mltt.plot
+plot(trees[[i]], show.tip.label=FALSE)
+trees
+mltt.plot(trees[[i]], log="y")
+?pbtree
+tree<-pbtree(n=400,scale=1)
+tree
+plot(tree)
+tree<-pbtree(n=50,scale=1)
+plot(tree)
+plot(trees[[i]], show.tip.label=FALSE)
+ltt.plot(trees[[i]], log="y")
+setwd('~/Desktop/Evolution/Tasks/Task_09')
+library(phytools)
+install.packages("RPANDA")
+library(RPANDA)
+setwd('~/Desktop/Evolution/Tasks/Task_09')
+library(phytools)
+trees <- list()
+births <-c()
+Fractions <-c()
+for (i in 1:100) {#
+#
+	births[i]<- sample(1:100, 1, replace=FALSE)#
+	Fractions[i] <- sample(1:100, 1, replace=FALSE)#
+	trees[[i]]<- pbtree(b=births[i], d= (births[i]*Fractions[i]), n=100)#
+}
+?cor()
+specRate <- births[i]
+?pbtree()
+specRate <- pbtree(b=births[i], n=100)
+for (i in 1:length(trees)) {#
+trees[[i]]$edge.length#
+#
+}
+print(trees[[i]])
+rates <- c()
+traits <- list()
+?fastBM
+setwd('~/Desktop/Evolution/Tasks/Task_09')
+library(phytools)
+trees <- list()
+births <-c()
+Fractions <-c()
+or (i in 1:100) {#
+#
+	births[i]<- sample(1:100, 1, replace=FALSE)#
+	Fractions[i] <- sample(1:100, 1, replace=FALSE)#
+	trees[[i]]<- pbtree(b=births[i], d= (births[i]*Fractions[i]), n=100)#
+}
+for (i in 1:100) {#
+#
+	births[i]<- sample(1:100, 1, replace=FALSE)#
+	Fractions[i] <- sample(1:100, 1, replace=FALSE)#
+	trees[[i]]<- pbtree(b=births[i], d= (births[i]*Fractions[i]), n=100)#
+}
+library(ape)
+library(geiger)
+library(apTreeshape)
+plot(trees[[i]], show.tip.label=FALSE)
+ltt.plot(trees[[i]], log="y")
+bd.ms(time=100, n=100)
+bd.km(time=100, n=100)
+log(trees$edge.length)
+branching.times(trees)
+bd.km(time=100, n=100)
+ltt.;ines(trees[[i]], lty=2)
+ltt.lines(trees[[i]], lty=2)
+plot(trees[[i]], show.tip.label=FALSE)
+ltt.plot(trees[[i]], log="y")
+ltt.lines(trees[[i]], lty=2)
+bd.km(trees[[i]]time=100, n=100)
+bd.km(trees[[i]], time=100, n=100)
+bd.ms(trees,time=100, n=100)
+bd.ms(trees[[i]],time=100, n=100)
+bd.ms(phy=trees[[i]]$phy,time=100, n=100)
+bd.km(phy=trees[[i]]$phy, time=100, n=100)
+log(trees$edge.length)
+log(trees[[i]]$edge.length)
+for (i in 1:length(trees[[i]])) {#
+trees[[i]]$edge.length#
+#
+}
+print(trees)
+print(trees[[i]])
+print(branchLength)
+for (i in 1:length(trees[[i]])) {#
+branchLength <-trees[[i]]$edge.length#
+#
+}
+print(branchLength)
+for (i in 1:length(trees[[i]])) {#
+branchLength <-mean(trees[[i]]$edge.length)#
+#
+}
+print(branchLength)
+bd.km(phy=trees[[i]]$phy, time=100, n=100)
+bd.ms(phy=trees[[i]]$phy,time=10, n=50)
+bd.km(phy=trees[[i]]$phy, time=10, n=100)
+rate.estimate(trees[[i]])
+bd.km(trees[[i]])
+bd.km(births[i])
+bd.km(trees[[i]]$phy, n=100)
+bd.km(trees[[i]], n=100)
+plotTree(trees[[i]], fsize= 1.5,ftype="i", lwd=1.5, bty=1.5)
+plotTree(trees[[i]], fsize= 1.5,ftype="f", lwd=1.5, bty=1.5)
+plotTree(trees[[i]], fsize= 1.5,ftype="i", lwd=1.5, bty=1.5)
+cor(1:2, 1:2)
+rates <- c()
+traits <- list()
+for (i in 1:100) {#
+	rates[i] <- sample(1:100, 1, replace = FALSE)#
+	traits[[i]] <- fastBM(tree=Tree, sig2= rates[i])#
+}
+Tree <- max(trees[[i]])
+Tree <- max(trees)
+Tree <- max(trees[[i]]$edge.length)
+plot(Tree)
+plot(Tree, type = 'b')
+Tree <- max(trees[[i]]$edge.length)
+plot(Tree, type = 'b')
+lines(Tree, type = 'b')
+plotTree(Tree, type = 'b')
+plot(Tree, type = 'b')
+for (i in 1:100) {#
+	rates[i] <- sample(1:100, 1, replace = FALSE)#
+	traits[[i]] <- fastBM(tree=Tree, sig2= rates[i])#
+}
+Tree <- max(branchLength)
+plot(Tree, type = 'b')
+for (i in 1:100) {#
+	rates[i] <- sample(1:100, 1, replace = FALSE)#
+	traits[[i]] <- fastBM(tree=Tree, sig2= rates[i])#
+}
+traits[[i]] <- fastBM(Tree, sig2= rates[i])
+for (i in 1:100) {#
+	rates[i] <- sample(1:100, 1, replace = FALSE)#
+	traits[[i]] <- fastBM(Tree, sig2= rates[i])#
+}
+max <- max(branchLength)
+max
+Tree <- max
+for (i in 1:100) {#
+	rates[i] <- sample(1:100, 1, replace = FALSE)#
+	traits[[i]] <- fastBM(Tree, sig2= rates[i])#
+}
+print(branchLength)
+Tree <- trees[[branchLength]]
+for (i in 1:100) {#
+	rates[i] <- sample(1:100, 1, replace = FALSE)#
+	traits[[i]] <- fastBM(Tree, sig2= rates[i])#
+}
+traitsMean <- mean(traits)
+traitsMean <- mean(traits[i])
+traitsMean <- mean(traits[[i]])
+traitsMean
+ratesMean <- mean(rates[i])
+ratesMean
+cor(traitsMean, ratesMean)
+max <- max(trees[[i]])
+trees[[i]]
+for (i in 1:100) {#
+#
+	births[i]<- rnorm(100)#
+	Fractions[i] <-rnorm(100)#
+	trees[[i]]<- pbtree(b=births[i], d= (births[i]*Fractions[i]), n=100)#
+}
+births[i]
+births[i]
+Fractions[i]
+Fractions[i]
+?rep
+?rnorm
+?sample
+for (i in 1:100) {#
+#
+	births[i]<-runif(1, min=1, max=100#
+	Fractions[i] <- runif(1, min=1, max=100)#
+	trees[[i]]<- pbtree(b=births[i], d= (births[i]*Fractions[i]), n=100)#
+}
+for (i in 1:100) {#
+#
+	births[i]<-runif(1, min=1, max=100#
+	Fractions[i] <- runif(1, min=1, max=100)#
+	trees[[i]]<- pbtree(b=births[i], d= (births[i]*Fractions[i]), n=100)#
+}
+sample(1:100, 1, replace=FALSE)
+for (i in 1:100) {#
+#
+	x <- sample(1:100, 1, replace=FALSE)#
+	y <- sample(1:100, 1, replace=FALSE)#
+	births[i] = x#
+	Fractions[i] = y#
+	trees[[i]]<- pbtree(b=births[i], d= (births[i]*Fractions[i]), n=100)#
+}
+births[i]
+births[i]
+births[i]
+for (i in 1:100) {#
+#
+	x <- sample(1:100, 1, replace=FALSE)#
+	y <- sample(1:100, 1, replace=FALSE)#
+	births[i] = x#
+	Fractions[i] = y#
+	trees[[i]]<- pbtree(b=births[i], d= (births[i]*Fractions[i]), n=100)#
+}
+births [i]
+plot(trees[[i]], show.tip.label=FALSE)
+ltt.plot(trees[[i]], log="y")
+bd.ms(phy=trees[[i]]$phy,time=100, n=100)
+log(trees[[i]]$edge.length)
+bd.km(trees[[i]], n=100)
+for (i in 1:length(trees[[i]])) {#
+branchLength <-mean(trees[[i]]$edge.length)#
+#
+}
+print(branchLength)
+plotTree(trees[[i]], fsize= 1.5,ftype="i", lwd=1.5, bty=1.5)
+cor(1:2, 1:2)
+trees[[i]]
+Tree <- trees[[branchLength]]
+rates <- c()
+traits <- list()
+for (i in 1:100) {#
+	rates[i] <- sample(1:100, 1, replace = FALSE)#
+	traits[[i]] <- fastBM(Tree, sig2= rates[i])#
+}
+traitsMean <- mean(traits[[i]])
+traitsMean
+ratesMean <- mean(rates[i])
+ratesMean
+cor(traitsMean, ratesMean)
+plot(traitsMean, ratesMean)
+rates[i]
+cor(traitsMean, ratesMean)
+for (i in 1:100) {#
+	rates[i] <- sample(1:100, 1, replace = FALSE)#
+	traits[[i]] <- fastBM(Tree, sig2= rates[i])#
+	print(i)#
+}
+rates[i]
+rates[i]
+for (i in 1:100) {#
+	rates[i] <- sample(1:100, 1, replace = FALSE)#
+	traits[[i]] <- fastBM(Tree, sig2= rates[i])#
+	rates[i]#
+	traits[[i]]#
+}
+for (i in 1:100) {#
+	rates[i] <- sample(1:100, 1, replace = FALSE)#
+	traits[[i]] <- fastBM(Tree, sig2= rates[i])#
+	print(rates[i])#
+	print(traits[[i]])#
+}
+traitsMean <- mean(traits[[i]])
+traitsMean
+rates[i]
+cor(traitsMean, ratesMean)
+cor(traitsMean, rates)
+cor(traitsMean, rates[i])
+a <- var(traits[[i]])
+cor(traitsMean, ratesMean)
+plot(traitsMean, ratesMean)
+b <- var(rates[i])
+plot(a,b)
+cor(a,b)
+traitMat <- cbind(traits[[1], traits[[4]])
+traitMat <- cbind(traits[[1]], traits[[4]])
+traitMat
+cor(traitMat)

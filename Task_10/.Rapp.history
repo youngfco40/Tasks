@@ -1,0 +1,597 @@
+names(Fit) <- 1:6
+Simluation4 <- simDraws(1e4, w = Fit)
+addHist(Y=8, Dat=Simulation4, Color=rgb(0,0,0,0.25))
+Simulation4 <- simDraws(1e4, w = Fit)
+addHist(Y=8, Dat=Simulation4, Color=rgb(0,0,0,0.25))
+Fit <- c(0.1, 0.2, 0.3, 0.4, 0.5, 1)
+names(Fit) <- 1:6
+Simulation5 <- simDraws(1e4, w = Fit)
+addHist(Y=8, Dat=Simulation5, Color=rgb(0,0,0,0.25))
+Fit <- c(0.1, 0.1, 0.1, 0.1, 0.1, 1)
+names(Fit) <- 1:6
+Simulation6 <- simsDraws(1e4, w = Fit)
+Simulation6 <- simDraws(1e4, w = Fit)
+addHist(Y=8, Dat=Simulation6, Color=rgb(0,0,0,0.25))
+mtext(side =2, 1t =8, line =0, "sel. sim")
+mtext(side =2, at =8, line =0, "sel. sim")
+Simulation7 <- c(Simulation2, Simulation3, Simulation4, Simulation5, Simulation6)
+addHist(Y=8, Dat=Simulation7, Colorrgb(0,0,1,0.25))
+addHist(Y=8, Dat=Simulation7, Color=rgb(0,0,1,0.25))
+source("/Users/jennayoung/Desktop/Evolution/Tasks/Task_04/Task04.R")
+plot(1:nrow(Pop1), Pop1[,1], ylim=c(0,1), type = "l", xlab = "generation", ylab = "allele freq", lwd =2)
+lines(1:nrow(Pop1), Pop1[,2], lwd =2, col = 'red')
+legend("topleft", legend = c("a", "b"), col = c("black", "red"), lwd = 2, bty = "n")
+plotFit (nruns = 10, n =50, ngens =100, init_p =0.5, h =1, s =0)
+plot(1:nrow(Pop1), Pop1[,1], ylim=c(0,1), type = "l", xlab = "generation", ylab = "allele freq", lwd =2)
+lines(1:nrow(Pop1), Pop1[,2], lwd =2, col = 'red')
+legend("topleft", legend = c("a", "b"), col = c("black", "red"), lwd = 2, bty = "n")
+plotFit (nruns = 10, n =50, ngens =100, init_p =0.5, h =1, s =0)
+plotChis(counts)
+par(las = 1, mar = c(4,4,1,1), mgp = c(2, 05, 0), tck = -0.01, cex.axis =1)
+hist(Chisqs, main = "", xlab = "chi-squared values", ylab = "frequency")
+par(las =1, mar = c(4,4,1,1), mgp = c(2, 0.5,0), tck = -0.01, cex.axis = 1)
+plot(1,1, xlim = c(0,400), ylim = c(1, 8.5), xlab = "", ylab ="", type = "n", yaxt = "n")
+axis(2, at =1:length(backgrounds), labels = backgrounds)
+mtext(side =1, expression(chi^2), cex =1.75, line =2.5)
+counter <-1#
+for(i in backgrounds) {#
+	Data <-Chisqs[which(results[,3] == i)]#
+	addHist(Y=counter, Dat=Data, Color = backgroundCol[counter])#
+	counter <- counter +1#
+	}
+abline (v = 11.70, lty =2, lwd =2, col = 'black')
+Simulation <- simDraws(10000)#
+addHist(Y=7, Dat = Simulation, Color="lightgray")#
+mtext(side =2, at =7, line =0, "simulated")#
+abline(v= 11.70, lty =2, lwd =2)#
+#
+Fit <- c(1,1,1,1,1,1)#
+names(Fit) <- 1:6#
+Simulation2 <- simDraws(1e4, w = Fit)#
+addHist(Y=8, Dat = Simulation2, Color=rgb(0,0,0,0.25))#
+#
+Fit <- c(0.1, 1, 1, 1, 1, 1)#
+names(Fit) <- 1:6#
+Simulation3 <- simDraws(1e4, w = Fit)#
+addHist(Y=8, Dat=Simulation3, Color=rgb(0,0,0,0.25))#
+#
+Fit <- c(0.5, 0.6, 0.7, 1, 1, 1)#
+names(Fit) <- 1:6#
+Simulation4 <- simDraws(1e4, w = Fit)#
+addHist(Y=8, Dat=Simulation4, Color=rgb(0,0,0,0.25))#
+#
+Fit <- c(0.1, 0.2, 0.3, 0.4, 0.5, 1)#
+names(Fit) <- 1:6#
+Simulation5 <- simDraws(1e4, w = Fit)#
+addHist(Y=8, Dat=Simulation5, Color=rgb(0,0,0,0.25))#
+#
+Fit <- c(0.1, 0.1, 0.1, 0.1, 0.1, 1)#
+names(Fit) <- 1:6#
+Simulation6 <- simDraws(1e4, w = Fit)#
+addHist(Y=8, Dat=Simulation6, Color=rgb(0,0,0,0.25))#
+mtext(side =2, at =8, line =0, "sel. sim")#
+#
+Simulation7 <- c(Simulation2, Simulation3, Simulation4, Simulation5, Simulation6)#
+addHist(Y=8, Dat=Simulation7, Color=rgb(0,0,1,0.25))
+par(las = 1, mar = c(4,4,1,1), mgp = c(2, 05, 0), tck = -0.01, cex.axis =1)#
+hist(Chisqs, main = "", xlab = "chi-squared values", ylab = "frequency")#
+par(las =1, mar = c(4,4,1,1), mgp = c(2, 0.5,0), tck = -0.01, cex.axis = 1)#
+plot(1,1, xlim = c(0,400), ylim = c(1, 8.5), xlab = "", ylab ="", type = "n", yaxt = "n")#
+#
+axis(2, at =1:length(backgrounds), labels = backgrounds)#
+mtext(side =1, expression(chi^2), cex =1.75, line =2.5)#
+#
+counter <-1#
+for(i in backgrounds) {#
+	Data <-Chisqs[which(results[,3] == i)]#
+	addHist(Y=counter, Dat=Data, Color = backgroundCol[counter])#
+	counter <- counter +1#
+	}#
+abline (v = 11.70, lty =2, lwd =2, col = 'black')#
+#
+Simulation <- simDraws(10000)#
+addHist(Y=7, Dat = Simulation, Color="lightgray")#
+mtext(side =2, at =7, line =0, "simulated")#
+abline(v= 11.70, lty =2, lwd =2)#
+#
+Fit <- c(1,1,1,1,1,1)#
+names(Fit) <- 1:6#
+Simulation2 <- simDraws(1e4, w = Fit)#
+addHist(Y=8, Dat = Simulation2, Color=rgb(0,0,0,0.25))#
+#
+Fit <- c(0.1, 1, 1, 1, 1, 1)#
+names(Fit) <- 1:6#
+Simulation3 <- simDraws(1e4, w = Fit)#
+addHist(Y=8, Dat=Simulation3, Color=rgb(0,0,0,0.25))#
+#
+Fit <- c(0.5, 0.6, 0.7, 1, 1, 1)#
+names(Fit) <- 1:6#
+Simulation4 <- simDraws(1e4, w = Fit)#
+addHist(Y=8, Dat=Simulation4, Color=rgb(0,0,0,0.25))#
+#
+Fit <- c(0.1, 0.2, 0.3, 0.4, 0.5, 1)#
+names(Fit) <- 1:6#
+Simulation5 <- simDraws(1e4, w = Fit)#
+addHist(Y=8, Dat=Simulation5, Color=rgb(0,0,0,0.25))#
+#
+Fit <- c(0.1, 0.1, 0.1, 0.1, 0.1, 1)#
+names(Fit) <- 1:6#
+Simulation6 <- simDraws(1e4, w = Fit)#
+addHist(Y=8, Dat=Simulation6, Color=rgb(0,0,0,0.25))#
+mtext(side =2, at =8, line =0, "sel. sim")#
+#
+Simulation7 <- c(Simulation2, Simulation3, Simulation4, Simulation5, Simulation6)#
+addHist(Y=8, Dat=Simulation7, Color=rgb(0,0,1,0.25))
+install.packages(learnPopGen)
+install.packages('learnPopGen')
+install.packages('coala')
+library(coala)
+library(phytools)
+model <- coal_model(sample_size = 5, loci_number = 10, loci_length = 500, ploidy =2) + feat_mutation(10) + feat_recombination(10) + sumstat_trees() + sumstat_nucleotide_div()
+stats <- simulate(model, nsim = 1)
+Diversity <- stats$pi
+install.packages("learnPopGen")
+install.packages("coala")
+library(coala)
+library(phytools)
+model <- coal_model(sample_size = 5, loci_number = 10, loci_length = 500, ploidy =2) + feat_mutation(10) + feat_recombination(10) + sumstat_trees() + sumstat_nucleotide_div()
+stats <- simulate(model, nsim = 1)
+Diversity <- stats$pi
+Nloci <- length(stats$trees)
+t1 <- read.tree(text=stats$trees[[1][1]])
+t1 <- read.tree(text=stats$trees[[1]][1])
+plot(t1)
+axisPhylo()
+Agel <- max(nodeHeights(t1))
+t2 <- read.tree(text=stats$trees[[2]][1])
+plot(t2)
+axisPhylo()
+compare.chronograms(t1, t2)
+t1_1 <- read.tree(text=stats$trees[[1]][1])
+t1_2 <- read.tree(text=stats$trees[[1]][2])
+coalescent.plot?
+coalescent?
+par(mfrow=c(1,2))
+plot(t1)
+axisPhylo()
+plot(t2)
+axisPhylo()
+compare.chronograms(t1,t2)
+?dnorm
+source("http://jonsmitchell.com/code/fxn05.R")
+Pop1 <- simPop(Popsize = 177, nGenerations 21 = 100, init)
+?simPop
+?
+??simPop
+Pop1 <- simPop(Popsize = 177, nGenertaions = 21, initial_p = 0.5, h =1 , s=0)
+source ("http://jonsmitchell.com/code/fxn05.R")
+Pop1 <- simPop(Popsize = 177, nGenertaions = 21, initial_p = 0.5, h =1 , s=0)
+Pop1 <- simPop(Popsize = 177, nGenerations = 21, initial_p = 0.5, h =1 , s=0)
+print(Pop1)
+install.packages(learnPopGen)
+install.packages("learnPopGen")
+library(learnPopGen)
+x <- genetic.drift(Ne=177, nrep =21, pause = 0.02)
+x <- genetic.drift(Ne=177, nrep =1, pause = 0.02)
+model <- coal_model(sample_size = 177, loci_number = 10, loci_length=402, ploidy =2)
+library(coala)
+model <- coal_model(sample_size = 177, loci_number = 10, loci_length=402, ploidy =2)
+print(model)
+stats <-simulate(model, nsim=1)
+model <- coal_model(sample_size = 177, loci_number = 10, loci_length=402, ploidy =2) + sumstat_trees()
+stats <-simulate(model, nsim=1)
+?dim()
+x <- 1:12 ; dim(x) <- c(3,4)
+x
+?nrow()
+ma <- matrix(1:12, 3, 4)
+nrow(ma)   # 3
+ncol(ma)   # 4
+ncol(array(1:24, dim = 2:4)) # 3, the second dimension
+NCOL(1:12) # 1
+NROW(1:12) # 12
+dim(as.matrix(numeric())) # 0 1
+dim(    cbind(numeric())) # ditto
+NCOL(numeric()) # 1 and hence
+NCOL(NULL)      # 1
+source("http://jonsmitchell.com/code/reformatData07.R")
+source("http://jonsmitchell.com/code/simFxn.R")
+plot(1,1, type="n", xlim=c(1998,2013), ylim=c(0,1))
+s <- apply(overallFreq, 2, function(x) lines(overallFreq[,1], x, col=rgb(0,0,0,0.1)))
+rescaleFreq <- apply(overallFreq[,3:ncol(overallFreq)], 2, function(x) x-x[1])
+plot(1,1, type="n", xlim=c(1998, 2013), ylim=c(-0.25,0.25))
+s <- apply(rescaleFreq, 2, function(x) lines(overallFreq[,1], x, col=rgb(0,0,0,0.01)))
+dYear <- c()
+dAlleles <- c()
+for (i in 3:nol(overallFreq)) {#
+	dYear <- c(dYear, overallFreq[,q])#
+	Vec <- overallFreq[,i]#
+	Init <- overall.Freq[1,i]#
+	dAlleles <- c(dAlleles, Vec - Int)#
+}
+for (i in 3:ncol(overallFreq)) {#
+	dYear <- c(dYear, overallFreq[,q])#
+	Vec <- overallFreq[,i]#
+	Init <- overall.Freq[1,i]#
+	dAlleles <- c(dAlleles, Vec - Int)#
+}
+for (i in 3:ncol(overallFreq)) {#
+	dYear <- c(dYear, overallFreq[,1])#
+	Vec <- overallFreq[,i]#
+	Init <- overall.Freq[1,i]#
+	dAlleles <- c(dAlleles, Vec - Int)#
+}
+for (i in 3:ncol(overallFreq)) {#
+	dYear <- c(dYear, overallFreq[,1])#
+	Vec <- overallFreq[,i]#
+	Init <- overallFreq[1,i]#
+	dAlleles <- c(dAlleles, Vec - Int)#
+}
+for (i in 3:ncol(overallFreq)) {#
+	dYear <- c(dYear, overallFreq[,1])#
+	Vec <- overallFreq[,i]#
+	Init <- overallFreq[1,i]#
+	dAlleles <- c(dAlleles, Vec - Init)#
+}
+smoothScatter(dYear, dAlleles, colramp = Pal, nbin = 100)
+plot(1,1, type="n", xlim=c(1998,2013), ylim=c(0,1))#
+s <- apply(overallFreq, 2, function(x) lines(overallFreq[,1], x, col=rgb(0,0,0,0.01)))
+rescaleFreq <- apply(overallFreq[,3:ncol(overallFreq)], 2, function(x) x-x[1])#
+plot(1,1, type="n", xlim=c(1998, 2013), ylim=c(-0.25,0.25))#
+s <- apply(rescaleFreq, 2, function(x) lines(overallFreq[,1], x, col=rgb(0,0,0,0.01)))#
+dYear <- c()#
+dAlleles <- c()
+for (i in 3:ncol(overallFreq)) {#
+	dYear <- c(dYear, overallFreq[,1])#
+	Vec <- overallFreq[,i]#
+	Init <- overallFreq[1,i]#
+	dAlleles <- c(dAlleles, Vec - Init)#
+}
+smoothScatter(dYear, dAlleles, colramp = Pal, nbin = 100)
+smoothScatter(dYear,  dAlleles, colramp = Pal, nbin 100, xlab="year", ylab = "change in allele freq. since 1998")
+smoothScatter(dYear  dAlleles, colramp = Pal, nbin 100, xlab="year", ylab = "change in allele freq. since 1998")
+smoothScatter(dYear,  dAlleles, colramp = Pal, nbin= 100, xlab="year", ylab = "change in allele freq. since 1998")
+addFit(nruns =50, n=100, ngens =18, startT = 1997, simCol = "gray40", rescale = TRUE)
+smoothScatter(dYear,  dAlleles, colramp = Pal, nbin= 100, xlab="year", ylab = "change in allele freq. since 1998")
+addFit(nruns =50, n=100, ngens =18, startT = 1997, simCol = "gray40", rescale = TRUE)
+plot(alleleFreqs$d_freq, alleleFreqs$d_imm, xlim=c(-0.15, 0.15), xlab="overall freq. change", ylab="freq. change in subset")
+points(alleleFreqs$d_freq, alleleFreqs$d_birth, col= 'blue')
+points(alleleFreqs$d_freq, alleleFreqs$d_surv, col = 'red')
+install.packages("phytools")
+install.packages("ape")
+library('phytools')
+library('ape')
+text.string <- "(((((((cow, pig), whale), (bat, lemur, human))), (robin, iguana)), coelacanth), (gold_fish, trout)), shark);"
+vert.tree <- read.tree(text=text.string)
+text.string <- "(((((((cow, pig), whale), (bat, (lemur, human))), (robin, iguana)), coelacanth), (gold_fish, trout)), shark);"
+vert.tree <- read.tree(text=text.string)
+plot(vert.tree, edge.width=2)
+nodelabels(frame="circle", bg='white', cex=1)
+vert.tree
+str(vert.tree)
+tree <- read.tree(text="(((A,B), (C,D)),E);")
+plotTree(tree, offset=1)
+tiplabels(frame="circle", bg='lightblue', cex=1)
+nodelabels(frame="cricle", bg='white', cex=1)
+nodelabels(frame="circle", bg='white', cex=1)
+tree$tip.label
+tree$edge
+AnolisTree <-force.ultrametric(read.tree("https://jonsmitchell.com/data/anolis.tre"))
+par(las=1)
+hist(AnolisTree$edge.length, col='black', border='white', main="", xlab="edge lengths for the Anolis tree", ylim=c(0,50), xlim=c(0,6))
+tipEdges <- which(AnolisTree$edge[,2] <=Ntip(AnolisTree))
+Lengths <- AnolisTree$edge.length
+names(Length) <- AnolisTree$tip.label
+names(Lengths) <- AnolisTree$tip.label
+names(Lengths)[which(Length == min(Lengths))]
+names(Lengths)[which(Lengths == min(Lengths))]
+plot(AnolisTree, cex=0.25)
+Labs <- sapply(AnolisTree$edge.length, round, digits=2)
+edgelabels(text=Labs,cex=0.25)
+?plot.phylo
+plot(AnolisTree, cex=0.25)
+plot(AnolisTree, cex=0.25, show.tip.label=FALSE)
+?plot.phylo
+plot(AnolisTree, cex=0.25, type="unrooted")
+plot(AnolisTree, cex=0.25, tip.color ='red')
+plot(AnolisTree, cex=0.50, tip.color ='red')
+edges <- which(AnolisTree$edge.length)
+edgelabels(AnolisTree$edge.length)
+plot(AnolisTree, cex =0.25, use.edge.lengths= TRUE)
+edges <- length(AnolisTree$tip.label)
+edgesLength <- setNames(AnolisTree$edge.length[sapply(1:n, function(x,y)which(y==x), y=AnolisTree$edge[,2])], AnolisTree$tip.label)
+edgesLength <- setNames(AnolisTree$edge.length[sapply(1:edges, function(x,y)which(y==x), y=AnolisTree$edge[,2])], AnolisTree$tip.label)
+edgesLength
+edgelabels(AnolisTree$edge.length)
+AnolisTree$edge.length <- round(AnolisTree$edge.length, 0.5)
+AnolisTree <- pbtree(n=10)
+AnolisTree$edge.length <- round(AnolisTree$edge.length, 0.5)
+edgesLength <- setNames(AnolisTree$edge.length[sapply(1:edges, function(x,y)which(y==x), y=AnolisTree$edge[,2])], AnolisTree$tip.label)
+edges <- length(AnolisTree$tip.label)
+edgesLength <- setNames(AnolisTree$edge.length[sapply(1:edges, function(x,y)which(y==x), y=AnolisTree$edge[,2])], AnolisTree$tip.label)
+edgesLength
+plot(AnolisTree, cex=1)
+edgelabels(AnolisTree$edge.length)
+setwd('~/Desktop/Evolution/Tasks/Task_10')
+library(diversitree)
+install.packages("diversitree")
+library(diversitree)
+transition_0tol <- 0.1
+transition_0to1 <- 0.1
+transition_1to0 <- 0.1
+speciation_0 <- 0.2
+extinction_0 <- 0.1
+speciation_1 <- 0.2
+extinction_1 <- 0.1
+maxN <- 1e3
+maxT <- 50
+Pars <- c(speciation_0, speciation_1, extinction_0, extinction_1, transition_0to1, transtition_1to0)
+Pars <- c(speciation_0, speciation_1, extinction_0, extinction_1, transition_0to1, transition_1to0)
+simTree <- tree.bisse(Pars, max.taxa = maxN, max.t = maxT)
+str(simTree)
+stateTable <- table(simTree$tip.state)
+stateTable/sum(stateTable)
+?tree.bisse
+stateTable
+setwd('~/Desktop/Evolution/Tasks/Task_10')#
+install.packages("diversitree")#
+library(diversitree)#
+#
+transition_0to1 <- 0.1#
+transition_1to0 <- 0.1#
+speciation_0 <- 0.2#
+extinction_0 <- 0.1#
+speciation_1 <- 0.2#
+extinction_1 <- 0.1#
+#
+maxN <- 1e3#
+maxT <- 50#
+Pars <- c(speciation_0, speciation_1, extinction_0, extinction_1, transition_0to1, transition_1to0)#
+simTree <- tree.bisse(Pars, max.taxa = maxN, max.t = maxT)#
+str(simTree)#
+#
+stateTable <- table(simTree$tip.state)#
+stateTable#
+stateTable/sum(stateTable)#
+#
+?tree.bisse
+transition_0to1 <-0.1#
+transtion_1to0 <- 0.1#
+speciation_state1 <- 0.3#
+extinction_state1 <- 0.2#
+speciation_state2 <- 0.5#
+extinction_state2 <- 0.2#
+maxN <-1e3#
+maxT <-50
+Parstest1 <- c(speciationstate1, speciationstate2, extinctionstate1, extinctionstate2,transtion0to1, transtition1to0)
+Parstest1 <- c(speciation_state1, speciation_state2, extinction_state1, extinction_state2,transtion_0to1, transtition_1to0)
+Parstest1 <- c(speciation_state1, speciation_state2, extinction_state1, extinction_state2,transition_0to1, transtition_1to0)
+transition_0to1 <-0.1#
+transition_1to0 <- 0.1#
+speciation_state1 <- 0.3#
+extinction_state1 <- 0.2#
+speciation_state2 <- 0.5#
+extinction_state2 <- 0.2#
+maxN <-1e3#
+maxT <-50
+Parstest1 <- c(speciation_state1, speciation_state2, extinction_state1, extinction_state2,transition_0to1, transtition_1to0)
+Parstest1 <- c(speciation_state1, speciation_state2, extinction_state1, extinction_state2,transition_0to1, transition_1to0)
+simTreetest1 <- tree.bisse(Parstest1, max.taxa = maxN, max.t = maxT)
+str(simTreetest1)
+stateTable1 <- table(simTreetest1$tip.state)
+stateTable1/sum(stateTable1)
+stateTable
+transition_0to1 <-0.1#
+transition_1to0 <- 0.1#
+speciation_state1 <- 0.5#
+extinction_state1 <- 0.5#
+speciation_state2 <- 0.5#
+extinction_state2 <- 0.5#
+maxN <-1e3#
+maxT <-50#
+Parstest1 <- c(speciation_state1, speciation_state2, extinction_state1, extinction_state2,transition_0to1, transition_1to0)#
+simTreetest1 <- tree.bisse(Parstest1, max.taxa = maxN, max.t = maxT)#
+stateTable1 <- table(simTreetest1$tip.state)#
+stateTable#
+stateTable1/sum(stateTable1)
+transition_0to1 <-0#
+transition_1to0 <- 0#
+speciation_state1 <- 0.5#
+extinction_state1 <- 0.5#
+speciation_state2 <- 0.5#
+extinction_state2 <- 0.5#
+maxN <-1e3#
+maxT <-50#
+Parstest1 <- c(speciation_state1, speciation_state2, extinction_state1, extinction_state2,transition_0to1, transition_1to0)#
+simTreetest1 <- tree.bisse(Parstest1, max.taxa = maxN, max.t = maxT)#
+stateTable1 <- table(simTreetest1$tip.state)#
+stateTable#
+stateTable1/sum(stateTable1)
+transition_0to1 <-0#
+transition_1to0 <- 0#
+speciation_state1 <- 0.5#
+extinction_state1 <- 0.5#
+speciation_state2 <- 0.5#
+extinction_state2 <- 0.5#
+maxN <-1e3#
+maxT <-50#
+Parstest1 <- c(speciation_state1, speciation_state2, extinction_state1, extinction_state2,transition_0to1, transition_1to0)#
+simTreetest1 <- tree.bisse(Parstest1, max.taxa = maxN, max.t = maxT)#
+stateTable1 <- table(simTreetest1$tip.state)#
+stateTable#
+stateTable1/sum(stateTable1)
+stateTable1 <- table(simTreetest1$tip.state)
+stateTable
+stateTable1/sum(stateTable1)
+transition_0to1 <-0.1#
+transition_1to0 <- 0.1#
+speciation_state1 <- 0.2#
+extinction_state1 <- 0.1#
+speciation_state2 <- 0.2#
+extinction_state2 <- 0.1#
+maxN <-1e3#
+maxT <-50#
+Parstest1 <- c(speciation_state1, speciation_state2, extinction_state1, extinction_state2,transition_0to1, transition_1to0)#
+simTreetest1 <- tree.bisse(Parstest1, max.taxa = maxN, max.t = maxT)#
+stateTable1 <- table(simTreetest1$tip.state)#
+stateTable#
+stateTable1/sum(stateTable1)
+transition_0to1 <-0.1#
+transition_1to0 <- 0.1#
+speciation_state1 <- 0.5#
+extinction_state1 <- 0.1#
+speciation_state2 <- 0.7#
+extinction_state2 <- 0.1#
+maxN <-1e3#
+maxT <-50#
+Parstest1 <- c(speciation_state1, speciation_state2, extinction_state1, extinction_state2,transition_0to1, transition_1to0)#
+simTreetest1 <- tree.bisse(Parstest1, max.taxa = maxN, max.t = maxT)#
+stateTable1 <- table(simTreetest1$tip.state)#
+stateTable#
+stateTable1/sum(stateTable1)
+transition_0to1 <-0#
+transition_1to0 <- 0#
+speciation_state1 <- 0.5#
+extinction_state1 <- 0.1#
+speciation_state2 <- 0.7#
+extinction_state2 <- 0.1#
+maxN <-1e3#
+maxT <-50#
+Parstest1 <- c(speciation_state1, speciation_state2, extinction_state1, extinction_state2,transition_0to1, transition_1to0)#
+simTreetest1 <- tree.bisse(Parstest1, max.taxa = maxN, max.t = maxT)#
+stateTable1 <- table(simTreetest1$tip.state)#
+stateTable#
+stateTable1/sum(stateTable1)
+transition_0to1 <-0.0#
+transition_1to0 <- 0.0#
+speciation_state1 <- 0.5#
+extinction_state1 <- 0.1#
+speciation_state2 <- 0.7#
+extinction_state2 <- 0.1#
+maxN <-1e3#
+maxT <-50#
+Parstest1 <- c(speciation_state1, speciation_state2, extinction_state1, extinction_state2,transition_0to1, transition_1to0)#
+simTreetest1 <- tree.bisse(Parstest1, max.taxa = maxN, max.t = maxT)#
+stateTable1 <- table(simTreetest1$tip.state)#
+stateTable#
+stateTable1/sum(stateTable1)
+transition_0to1 <-0.1#
+transition_1to0 <- 0.1#
+speciation_state1 <- 0.1#
+extinction_state1 <- 0.1#
+speciation_state2 <- 0.1#
+extinction_state2 <- 0.1#
+maxN <-1e3#
+maxT <-50#
+Parstest1 <- c(speciation_state1, speciation_state2, extinction_state1, extinction_state2,transition_0to1, transition_1to0)#
+simTreetest1 <- tree.bisse(Parstest1, max.taxa = maxN, max.t = maxT)#
+stateTable1 <- table(simTreetest1$tip.state)#
+stateTable#
+stateTable1/sum(stateTable1)
+plot(stateTable1)
+transition_0to1 <-0.1#
+transition_1to0 <- 0.1#
+speciation_state1 <- 0.1#
+extinction_state1 <- 0.1#
+speciation_state2 <- 0.2#
+extinction_state2 <- 0.1#
+maxN <-1e3#
+maxT <-50#
+Parstest1 <- c(speciation_state1, speciation_state2, extinction_state1, extinction_state2,transition_0to1, transition_1to0)#
+simTreetest1 <- tree.bisse(Parstest1, max.taxa = maxN, max.t = maxT)#
+stateTable1 <- table(simTreetest1$tip.state)#
+stateTable1#
+stateTable1/sum(stateTable1)
+plot(stateTable1)
+transition_0to1 <-0.1#
+transition_1to0 <- 0.1#
+speciation_state1 <- 0.1#
+extinction_state1 <- 0.1#
+speciation_state2 <- 0.2#
+extinction_state2 <- 0.1#
+maxN <-1e3#
+maxT <-50#
+Parstest1 <- c(speciation_state1, speciation_state2, extinction_state1, extinction_state2,transition_0to1, transition_1to0)#
+simTreetest1 <- tree.bisse(Parstest1, max.taxa = maxN, max.t = maxT)#
+stateTable1 <- table(simTreetest1$tip.state)#
+stateTable1#
+stateTable1/sum(stateTable1)
+plot(stateTable1)
+transition_0to1 <-0.1#
+transition_1to0 <- 0.1#
+speciation_state1 <- 0.1#
+extinction_state1 <- 0.5#
+speciation_state2 <- 0.2#
+extinction_state2 <- 0.5#
+maxN <-1e3#
+maxT <-50#
+Parstest1 <- c(speciation_state1, speciation_state2, extinction_state1, extinction_state2,transition_0to1, transition_1to0)#
+simTreetest1 <- tree.bisse(Parstest1, max.taxa = maxN, max.t = maxT)#
+stateTable1 <- table(simTreetest1$tip.state)#
+stateTable1#
+stateTable1/sum(stateTable1)
+transition_0to1 <-0.1#
+transition_1to0 <- 0.1#
+speciation_state1 <- 0.1#
+extinction_state1 <- 0.2#
+speciation_state2 <- 0.2#
+extinction_state2 <- 0.2#
+maxN <-1e3#
+maxT <-50#
+Parstest1 <- c(speciation_state1, speciation_state2, extinction_state1, extinction_state2,transition_0to1, transition_1to0)#
+simTreetest1 <- tree.bisse(Parstest1, max.taxa = maxN, max.t = maxT)#
+stateTable1 <- table(simTreetest1$tip.state)#
+stateTable1#
+stateTable1/sum(stateTable1)
+transition_0to1 <-0.1#
+transition_1to0 <- 0.1#
+speciation_state1 <- 0.1#
+extinction_state1 <- 0.4#
+speciation_state2 <- 0.1#
+extinction_state2 <- 0.4#
+maxN <-1e3#
+maxT <-50#
+Parstest1 <- c(speciation_state1, speciation_state2, extinction_state1, extinction_state2,transition_0to1, transition_1to0)#
+simTreetest1 <- tree.bisse(Parstest1, max.taxa = maxN, max.t = maxT)#
+stateTable1 <- table(simTreetest1$tip.state)#
+stateTable1#
+stateTable1/sum(stateTable1)
+transition_0to1 <-0.1#
+transition_1to0 <- 0.1#
+speciation_state1 <- 0.1#
+extinction_state1 <- 0.2#
+speciation_state2 <- 0.1#
+extinction_state2 <- 0.2#
+maxN <-1e3#
+maxT <-50#
+Parstest1 <- c(speciation_state1, speciation_state2, extinction_state1, extinction_state2,transition_0to1, transition_1to0)#
+simTreetest1 <- tree.bisse(Parstest1, max.taxa = maxN, max.t = maxT)#
+stateTable1 <- table(simTreetest1$tip.state)#
+stateTable1#
+stateTable1/sum(stateTable1)
+transition_0to1 <-0.1#
+transition_1to0 <- 0.1#
+speciation_state1 <- 0.3#
+extinction_state1 <- 0.2#
+speciation_state2 <- 0.1#
+extinction_state2 <- 0.2#
+maxN <-1e3#
+maxT <-50#
+Parstest1 <- c(speciation_state1, speciation_state2, extinction_state1, extinction_state2,transition_0to1, transition_1to0)#
+simTreetest1 <- tree.bisse(Parstest1, max.taxa = maxN, max.t = maxT)#
+stateTable1 <- table(simTreetest1$tip.state)#
+stateTable1#
+stateTable1/sum(stateTable1)
+transition_0to1 <- 0.1#
+transition_1to0 <- 0.1#
+speciation_state1 <- 0.3#
+extinction_state1 <- 0.1#
+speciation_state2 <- 0.1#
+extinction_state2 <- 0.1#
+maxN <-1e3#
+maxT <-50#
+Parstest1 <- c(speciation_state1, speciation_state2, extinction_state1, extinction_state2,transition_0to1, transition_1to0)#
+simTreetest1 <- tree.bisse(Parstest1, max.taxa = maxN, max.t = maxT)#
+stateTable1 <- table(simTreetest1$tip.state)#
+stateTable1#
+stateTable1/sum(stateTable1)
